@@ -1,0 +1,17 @@
+{
+  "name": "test-automation-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test tests/business_insider/sharebar.spec.ts --headed --reporter=html --project=chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.26.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.26.1"
+  }
+}
