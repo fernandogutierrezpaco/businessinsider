@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { PlanningStudioTourPage } from '../../src/page-objects/PlanningStudioTourPage';
 
 let planingStudioTourPage;
@@ -32,6 +32,7 @@ test.describe('Share bar suite', () => {
     });
 
     await test.step('🧪 3. Assert that Email pop up window is displayed.', async () => {
+      // TODO: Not able to complete since email icon opens a new window depending of your Operating System
       await planingStudioTourPage.clickEmailIcon();
     });
  });
